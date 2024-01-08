@@ -2,6 +2,8 @@
 
 Определен общий интерфейс или класс для создания объектов, реализующие классы могут изменять тип создаваемых объектов.
 
+![img_1.png](image/img_1.png)
+
 ```java
 abstract class Department {
     public abstract Employee createEmployee();
@@ -28,4 +30,3 @@ class Programmer extends Employee {
 class Accountant extends Employee {
 }
 ```
-![img_1.png](image/img_1.png)
