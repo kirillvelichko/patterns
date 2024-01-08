@@ -2,7 +2,7 @@
 
 Определен общий интерфейс или класс для создания объектов, реализующие классы могут изменять тип создаваемых объектов.
 
-![img_1.png](image/img_1.png)
+![img.png](image/FactoryMethod.png)
 
 ```java
 abstract class Department {
