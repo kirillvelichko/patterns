@@ -2,7 +2,7 @@
 
 Позволяет добавлять объектам новое поведение, помещая их в объекты-обёртки.
 
-Базовый класс
+#### Базовый класс:
 ```java
 public abstract class Sandwich {
 
@@ -17,7 +17,7 @@ public class Bread extends Sandwich {
 }
 ```
 
-Декоратор
+#### Декоратор:
 ```java
 @RequiredArgsConstructor
 public abstract class SandwichDecorator extends Sandwich {
@@ -51,7 +51,7 @@ public class Sausage extends SandwichDecorator {
 }
 ```
 
-Использование
+#### Использование:
 ```java
 public class Main {
 
@@ -60,5 +60,4 @@ public class Main {
         System.out.println(sandwich.getIngredients());
     }
 }
-
 ```
