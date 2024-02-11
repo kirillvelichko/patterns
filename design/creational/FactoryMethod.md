@@ -1,23 +1,40 @@
 ## Factory Method
 
-Определен общий интерфейс или класс для создания объектов, реализующие классы могут изменять тип создаваемых объектов.
+#### How-to:
 
-![img](image/FactoryMethod.svg)
+Метод имеет общий интерфейс для создания объектов, реализующие классы могут изменять тип создаваемых объектов.
+
+```mermaid
+classDiagram
+  class Department{
+    <<abstract>>
+    get() Employee
+  }
+  
+  class ItDepartment{
+    get() Programmer
+  }
+  
+  class Employee{
+    <<abstract>>
+  }
+  
+  class Programmer{
+  }
+  
+  Department <|-- ItDepartment
+  Employee <|-- Programmer
+```
 
 ```java
 abstract class Department {
-    public abstract Employee createEmployee();
+    public abstract Employee getEmployee();
 }
 
 class ItDepartment extends Department {
-    public Employee createEmployee() {
+    @Override
+    public Programmer getEmployee() {
         return new Programmer();
-    }
-}
-
-class AccountingDepartment extends Department {
-    public Employee createEmployee() {
-        return new Accountant();
     }
 }
 
@@ -25,8 +42,5 @@ abstract class Employee {
 }
 
 class Programmer extends Employee {
-}
-
-class Accountant extends Employee {
 }
 ```
