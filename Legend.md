@@ -1,8 +1,16 @@
 ### Class Diagram
 ```mermaid
 classDiagram
-ClassA1 --|> ClassA2 : Inheritance
-classB1 ..|> classB2 : Implementation
-ClassC1 --* ClassC2 : Composition
-ClassD1 --o ClassD2 : Aggregation
+Admin --|> User : Inheritance
+Thread ..|> Runnable : Implementation
+PC *-- CPU : Composition
+Car o-- Mechanic : Aggregation
+Person --> Address : Association
+Object .. Method : Link
 ```
+1. Admin extend User.
+2. Thread implement Runnable.
+3. PC has a CPU.
+4. Car has a Mechanic.
+5. Person has an Address.
+6. Object linked with Method.
