@@ -1,8 +1,8 @@
 ## Prototype
 
-Процесс клонирования делегируется фактическим клонируемым объектам.
+Реализация клонирования делегируется самим объектам.
 
-### Классическая реализация
+#### Классическая реализация
 ```java
 public class Shape {
     private int width;
@@ -22,7 +22,7 @@ public class Shape {
 }
 ```
 
-### Реализация с использованием native метода JVM
+#### Реализация с использованием native метода JVM
 ```java
 public class Shape implements Cloneable {
     private int width;
