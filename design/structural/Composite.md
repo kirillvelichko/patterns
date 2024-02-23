@@ -1,8 +1,6 @@
 ## Composite
 Позволяет создать дерево объектов и работать с ним как с единым объектом.
 
-![img](image/Composite.png)
-
 ```java
 public abstract class Item {
     protected BigDecimal price;
