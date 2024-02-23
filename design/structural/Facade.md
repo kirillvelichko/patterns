@@ -2,4 +2,42 @@
 
 Упрощает применение одного или нескольких классов, предоставляет функции, которые нужны клиенту, и скрывает все остальные.
 
-![img](image/Facade.svg)
+
+```mermaid
+classDiagram
+
+    class Interface {
+        method1()
+        method3()
+        method5()
+    }
+
+    class Facade {
+        ClassA a
+        ClassB b
+        AdditionalFacade f
+        method1()
+        method3()
+        method5()
+    }
+
+    class ClassA {
+        method1()
+        method2()
+    }
+
+    class ClassB {
+        method3()
+        method4()
+    }
+
+    class AdditionalFacade {
+        method5()
+    }
+
+    Interface <|.. Facade
+    Facade o-- ClassA
+    Facade o-- ClassB
+    Facade o-- AdditionalFacade
+
+```
