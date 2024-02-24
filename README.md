@@ -1,4 +1,4 @@
-## Class Diagram
+## Class Diagram Legend
 ```mermaid
 classDiagram
   Admin --|> User : Inheritance
