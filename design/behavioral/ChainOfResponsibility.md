@@ -37,7 +37,9 @@ public abstract class Validator {
 
     public abstract boolean isValid(Object obj);
 }
+```
 
+```java
 @NoArgsConstructor
 public class StateValidator extends Validator {
 
@@ -62,7 +64,9 @@ public class StateValidator extends Validator {
         return false;
     }
 }
+```
 
+```java
 @NoArgsConstructor
 public class DataValidator extends Validator {
 
